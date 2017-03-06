@@ -6,7 +6,7 @@
 
 #weather2 .row{
   display: flex;
-  margin-left:100px;
+  margin-left:30%;
   margin-top:-38px;
 }
 
@@ -159,9 +159,9 @@ a {
 .location {
   background: #249991;
   height: 105px;
-  width: 90px;
+  width: 100px;
   border-radius: 10px;
-  /*left: -80px;*/
+  /*left: -40px;*/
   /*box-shadow: inset 0px 1px 0px rgba(255,255,255,0.3),0px 10px 0px rgba(0,0,0,0.2);*/
 }
 
