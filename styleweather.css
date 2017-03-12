@@ -1,4 +1,22 @@
 /*new*/
+html{
+  height:100%;
+}
+body#night{
+  color:white;
+  background: #040a66;
+  background: -moz-linear-gradient(top, #040a66 0%, #232442 100%);
+  background: -webkit-linear-gradient(top, #040a66 0%,#232442 100%);
+  background: linear-gradient(to bottom, #040a66 0%,#232442 100%);
+}
+
+body#day{
+ background: #ffd200;
+ background: -moz-linear-gradient(top, #ffd200 0%, #f9bc59 99%);
+ background: -webkit-linear-gradient(top, #ffd200 0%,#f9bc59 99%);
+ background: linear-gradient(to bottom, #ffd200 0%,#f9bc59 99%);
+}
+
 #weather2{
   /*display: flex;*/
   /*justify-content: space-around;*/
@@ -26,14 +44,6 @@
   padding-top:25%;
 }
 
-/*days*/
-/*.col.day #c1{
-  font-size: 95%;
-}
-
-.col.day #c2{
-font-size: 90%;
-}*/
 
 
 /*highs*/
@@ -72,7 +82,7 @@ font-size: 90%;
 
 
 /*sunset styling*/
-.location#sunrise{
+/*.location#sunrise{
   background-color: #E892A8;
   color: white;
 }
@@ -87,7 +97,6 @@ font-size: 90%;
 
 .location#day{
   background-color: #FFD200;
-  /*color: ;*/
 }
 .forecast#day{
   background: #ffd200;
@@ -119,20 +128,20 @@ font-size: 90%;
   background: -webkit-linear-gradient(top, #040a66 0%,#232442 100%);
   background: linear-gradient(to bottom, #040a66 0%,#232442 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#040a66', endColorstr='#232442',GradientType=0 );
-}
+  }*/
 
 
 
 
-/*end new*/
-* {
-  margin: 0px;
-  padding: 0px;
-}
+  /*end new*/
+  * {
+    margin: 0px;
+    padding: 0px;
+  }
 
-a {
-  color: #fff;
-}
+  a {
+    color: #fff;
+  }
 
  /* .credits {
  color: rgba(255,255,255,0.8);
@@ -144,6 +153,8 @@ a {
    /*background-size: 100% auto;*/
    font-family: 'Roboto Condensed', sans-serif;
    -webkit-font-smoothing: antialiased;
+   height:100%;
+   background-size: 100% auto;
  }
 
  article {
@@ -153,16 +164,16 @@ a {
   position: relative;
   margin: 80px auto;
   border-radius: 10px;
-  /*box-shadow: 0px 10px 0px     rgba(0,0,0,0.2);*/
+  box-shadow: 5px 10px 5px rgba(0,0,0,0.5);
 }
 
 .location {
-  background: #249991;
+  /*background: #249991;*/
   height: 105px;
   width: 100px;
   border-radius: 10px;
   /*left: -40px;*/
-  /*box-shadow: inset 0px 1px 0px rgba(255,255,255,0.3),0px 10px 0px rgba(0,0,0,0.2);*/
+  box-shadow: inset 0px 1px 2px rgba(255,255,255,0.3),0px 10px 0px rgba(0,0,0,0.2);
 }
 
 .location span {

@@ -34,10 +34,10 @@
             // }
 
              //Current weather
-            html2 = '<div class="location"><div id="weathercode">' + weather.code + '</div> <div id ="temp">' + weather.temp + '&deg;</div>';
+             html2 = '<div class="location"><div id="weathercode">' + weather.code + '</div> <div id ="temp">' + weather.temp + '&deg;</div>';
             //Left sidebar city, state
             html2 += '<span class="city">' + weather.city + '</span><span class="state">' + weather.region + '</span></div>';
-           
+
             //lows
             html2 += '<div class="row">';
             for (var i = 0; i < 3; i++) {
@@ -79,25 +79,26 @@
 
             if (moment(currTime).isAfter(sunrise) && moment(currTime).isBefore(sunset)) {
               //daytime
-              $(".location").attr("id", "day");
-              $("article").attr("id", "day");
-
+              // $(".location").attr("id", "day");
+              // $("article").attr("id", "day");
+              $("body").attr("id", "day");
             } 
-            else if (moment(currTime).isSame(sunset)) {
-                //sunset
-                $(".location").attr("id", "sunset");
-                $("article").attr("id", "sunset");
+            // else if (moment(currTime).isSame(sunset)) {
+            //     //sunset
+            //     // $(".location").attr("id", "sunset");
+            //     // $("article").attr("id", "sunset");
+            //   }
+            else if (moment(currTime).isAfter(sunset) ) {
+                //night time
+                // $(".location").attr("id", "night");
+                // $("article").attr("id", "night");
+                $("body").attr("id", "night");
               }
-              else if (moment(currTime).isAfter(sunset) ) {
-                //after sunset, night time
-                $(".location").attr("id", "night");
-                $("article").attr("id", "night");
-              }
-              else if (moment(currTime).isSame(sunrise) ){
-                //dawn
-                $(".location").attr("id", "sunrise");
-                $("article").attr("id", "sunrise");
-              }
+              // else if (moment(currTime).isSame(sunrise) ){
+              //   //dawn
+              //   // $(".location").attr("id", "sunrise");
+              //   // $("article").attr("id", "sunrise");
+              // }
 
 
 
